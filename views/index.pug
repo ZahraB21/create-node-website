@@ -5,6 +5,7 @@ block content
   p This project is just to practice
   each superhero in superheros
     div.superhero-container
-      img(src='/images/' + superhero.image)
+      a(href='/superhero/' + superhero.id)
+        img(src='/images/' + superhero.image)
       h3= superhero.name
     
