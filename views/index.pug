@@ -1,8 +1,11 @@
 extends ./layout.pug
 
+
 block content
   h1 Wellcome to Node.js, Express and Pug
   p This project is just to practice
+  include ./create.pug
+
   each superhero in superheros
     div.superhero-container
       a(href='/superhero/' + superhero.id)

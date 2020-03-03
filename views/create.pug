@@ -1,0 +1,7 @@
+extends ./layout.pug
+
+block content
+  div.create-container
+  form(action="/superheros",  method="post")
+    input(type="text", placeholder="suerhero name", required="required", name="superhero")
+    button Create
